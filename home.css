@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Voorkom horizontaal scrollen */
+    overflow-y: hidden; /* Voorkom verticaal scrollen */
+}
+
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    width: 40px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(1, 45, 1);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover:after {
+    width: 100%;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(school1.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.header {
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+
+.header h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(3, 44, 3);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: rgb(5, 52, 5);
+    border-radius: 30px;
+    color: whitesmoke;
+}
